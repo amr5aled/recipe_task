@@ -21,6 +21,8 @@ void main() async {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    //TODO: USE serviceloctor and di 
+    //use provider on screen and not register in main 
     return ChangeNotifierProvider(
       create: (_) => RecipeProvider(
           getRecipesUseCase:
@@ -29,6 +31,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'My Recipe App',
         debugShowCheckedModeBanner: false,
+        //TODO:use theme
         theme: ThemeData(primarySwatch: Colors.blue),
         initialRoute: '/',
         routes: {

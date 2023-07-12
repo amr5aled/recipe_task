@@ -6,6 +6,7 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //TODO:use widget component such textField
     return Scaffold(
       appBar: AppBar(title: Text('Login')),
       body: Padding(
