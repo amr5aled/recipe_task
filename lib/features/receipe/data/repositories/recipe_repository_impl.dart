@@ -16,10 +16,11 @@ class RecipeRepositoryImpl implements RecipeRepository {
 
   Recipe _mapToDomain(RecipeModel model) {
     return Recipe(
-      name: model.name,
-      imageUrl: model.imageUrl,
-      isFavorite: model.isFavorite,
-      id: model.id,
-    );
+        name: model.name,
+        imageUrl: model.imageUrl,
+        isFavorite: model.isFavorite,
+        id: model.id,
+        ingredients: model.ingredients,
+        instructions: model.instructions);
   }
 }

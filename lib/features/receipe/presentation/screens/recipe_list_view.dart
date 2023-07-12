@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import '../providers/recipe_provider.dart';
 import '../../domain/entities/recipe.dart';
+import '../providers/recipe_provider.dart';
 import 'recipe_details_view.dart';
 
 class RecipeListScreen extends StatefulWidget {

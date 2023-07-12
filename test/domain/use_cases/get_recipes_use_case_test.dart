@@ -20,12 +20,24 @@ void main() {
       // Mock the behavior of the repository
       when(mockRepository.getRecipes()).thenAnswer((_) async => [
             Recipe(
-                name: 'Recipe 1', imageUrl: 'url1', isFavorite: false, id: "1"),
+              name: 'Recipe 1',
+              imageUrl: 'url1',
+              isFavorite: false,
+              id: "1",
+              ingredients: [],
+              instructions: '',
+            ),
             Recipe(
-                name: 'Recipe 2', imageUrl: 'url2', isFavorite: false, id: "2"),
+              name: 'Recipe 2',
+              imageUrl: 'url2',
+              isFavorite: true,
+              id: "2",
+              ingredients: [],
+              instructions: '',
+            ),
           ]);
 
-      // Invoke the use case
+      // Invoke the method on the use case
       final recipes = await useCase.execute();
 
       // Verify the result

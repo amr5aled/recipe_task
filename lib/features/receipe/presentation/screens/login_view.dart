@@ -28,9 +28,9 @@ class LoginScreen extends StatelessWidget {
                 // Perform login validation (hardcoded values for this example)
                 final email = emailController.text;
                 final password = passwordController.text;
-                // if (email == 'test@example.com' && password == 'password') {
+                if (email == 'test@example.com' && password == 'password') {
                   Navigator.of(context).pushReplacementNamed('/recipeList');
-                // }
+                }
               },
               child: Text('Login'),
             ),

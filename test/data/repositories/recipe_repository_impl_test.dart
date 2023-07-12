@@ -20,9 +20,21 @@ void main() {
       // Mock the behavior of the data source
       when(mockDataSource.getRecipeData()).thenAnswer((_) async => [
             RecipeModel(
-                name: 'Recipe 1', imageUrl: 'url1', isFavorite: false, id: "1"),
+              name: 'Recipe 1',
+              imageUrl: 'url1',
+              isFavorite: false,
+              id: "1",
+              ingredients: [],
+              instructions: '',
+            ),
             RecipeModel(
-                name: 'Recipe 2', imageUrl: 'url2', isFavorite: true, id: "2"),
+              name: 'Recipe 2',
+              imageUrl: 'url2',
+              isFavorite: true,
+              id: "2",
+              ingredients: [],
+              instructions: '',
+            ),
           ]);
 
       // Invoke the method on the repository
